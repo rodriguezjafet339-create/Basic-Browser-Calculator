@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id = calculator>
+        <div id= navigatorDiv>
+        <button class = navigators onclick="scrollDisplay(-1)"> &#8676;</button>
+        <button class = navigators onclick="scrollDisplay(1)">&#8677;</button>
+        </div>
+    <div id = screen>
+        <div id = scroller>
+        <p id = result_field></p>
+        </div>
+        </div>
+        <br>
+        <div id = input_field>
+            
+            <div id = erasers>
+            <button id = clear onclick = "createString('___')">C</button>
+            <button id = backspace onclick = "createString(' ')">&larr;</button>
+            <button class = operator id = "add" onclick = "createString('+')">+</button>
+            <div id = numbersAndOperators>
+                <button class = number id = "7" onclick = "createString('7')">7</button>
+                <button class = number id = "8" onclick = "createString('8')">8</button>
+                <button class = number id = "9" onclick = "createString('9')">9</button>
+                <button class = operator id = "subtract" onclick = "createString('-')">-</button>
+                <br>
+                <button class = number id = "4" onclick = "createString('4')">4</button>
+                <button class = number id = "5" onclick = "createString('5')">5</button>
+                <button class = number id = "6" onclick = "createString('6')">6</button>
+                <button class = operator id = "multiply" onclick = "createString('&#215;')">&#215;</button>
+                <br>
+                <button class = number id = "1" onclick = "createString('1')">1</button>
+                <button class = number id = "2" onclick = "createString('2')">2</button>
+                <button class = number id = "3" onclick = "createString('3')">3</button>
+                <button class = operator id = "divide" onclick = "createString('&#xF7;')">&#xF7;</button>
+                <br>
+                <button class = number id = "0" onclick = "createString('0')">0</button>
+                <button class = number id = "." onclick = "createString('.')">.</button>
+                <button id = equal onclick = "calculateResult()">=</button>
+            </div>
+        </div>  
+        </div>
+    </body>
+    </html>
