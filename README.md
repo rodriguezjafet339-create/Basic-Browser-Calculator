@@ -13,5 +13,15 @@ git clone https://github.com/rodriguezjafet339-create/Basic-Browser-Calculator.g
 ```
 
 ## Usage
+
 1. Open the root folder, and open index.html.
 2. Use the two arrow buttons above the screen to navigate through long input/output.
+
+## Feedback and bug reports
+
+Found a bug or have an idea? [Open an issue](../../issues).
+Thank You so Much!
+
+## License
+
+MIT
